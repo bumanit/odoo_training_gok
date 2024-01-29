@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="rule_company_emp_ids" model="ir.rule">
+            <field name="name">Journals modifiable by users</field>
+            <field name="model_id" ref="account.model_hr_emloyee"/>
+            <field name="perm_read" eval="False"/>
+            <field name="domain_force">['|', ('company_id', '=', company_ids), ('company_id', '=', False)]</field>
+        </record>
+    </data>
+</odoo>

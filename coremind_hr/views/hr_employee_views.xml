@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit_coremind_hr" model="ir.ui.view">
+            <field name="name">view_employee_form.inherit.coremind_hr</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='tz']" position="after">
+                    <field name="work_start_date" />
+                    <field name="organization_start_date" />
+                    <field name="worked_months" />
+                    <field name="organization_worked_months" />
+                    <!-- <field name="child_ids" /> -->
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
