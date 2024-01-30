@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="lunch_order_view_tree_inherit_coremind_id" model="ir.ui.view">
+            <field name="name">lunch_order_view_tree.inherit.coremind_id</field>
+            <field name="model">lunch.order</field>
+            <field name="inherit_id" ref="lunch.lunch_order_view_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='user_id']" position="before">
+                    <field name="employee_id" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

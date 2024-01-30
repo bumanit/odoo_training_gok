@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="hr_employee_lunch_order_wizard" model="ir.ui.view">
+            <field name="name">hr.employee.lunch.order.wizard</field>
+            <field name="model">hr.employee.lunch.order.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Employee">
+                    <sheet>
+                        <group>
+                            <field name="date" />
+                        </group>
+                        <notebook>
+                            <page name="Employees">
+                                <field name="employee_ids" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <footer>
+                        <button name="create_order" string="Create Order" class="btn-secondary" type="object" data-hotkey="P"/>
+                        <button string="Cancel" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!-- Actions -->
+        <record id="action_hr_employee_lunch_order_wizard" model="ir.actions.act_window">
+            <field name="name">action.hr.employee.lunch.order.wizard</field>
+            <field name="res_model">hr.employee.lunch.order.wizard</field>
+            <field name="view_id" ref="coremind_hr.hr_employee_lunch_order_wizard"/>
+            <field name="view_mode">form,tree</field>
+            <field name="target">new</field>
+        </record>
+        <!-- Menu -->
+        <menuitem name="Lunch Order" action="action_hr_employee_lunch_order_wizard" id="coremind_hr.lunch_order" parent="lunch.menu_lunch" sequence="2" />
+        <menuitem name="Lunch Order" action="action_hr_employee_lunch_order_wizard" id="coremind_hr.lunch_order" parent="lunch.menu_lunch_title" sequence="200" />
+    </data>
+</odoo>
