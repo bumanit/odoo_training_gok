@@ -17,6 +17,7 @@ class HrEmployee(models.Model):
         compute="_compute_organization_worked_months", store=True
     )
     code = fields.Char(readonly=False, copy=False)
+    lunch_ids = fields.One2many("lunch.order", "employee_id")
 
     _sql_constraints = [
         (
@@ -38,6 +39,7 @@ class HrEmployee(models.Model):
             if operator in expression.NEGATIVE_TERM_OPERATORS:
                 name_domain = ["&", "!"] + name_domain[1:]
             domain = expression.AND([name_domain, domain])
+
         return self._search(domain, limit=limit, order=order)
 
     # @api.constraints("work_start_date")

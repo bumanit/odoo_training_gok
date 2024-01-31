@@ -18,7 +18,9 @@ Long description of module's purpose
         "views/hr_employee_views.xml",
         "views/lunch_order_views.xml",
         "wizard/hr_employee_lunch_order_views.xml",
-        "report/hr_employee_lunch_report.xml",
+        "wizard/hr_employee_lunch_order_report_views.xml",
+        # "report/hr_employee_lunch_report.xml",
+        "report/hr_employee_lunch_order_report.xml",
     ],
     # only loaded in demonstration mode
     # "demo": [

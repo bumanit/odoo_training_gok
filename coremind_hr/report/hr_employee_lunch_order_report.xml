@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="coremind_hr.hr_employee_lunch_order_report" model="ir.actions.report">
+            <field name="name">Print Lunch Order</field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">coremind_hr.print_hr_employee_lunch_order</field>
+            <field name="report_file">coremind_hr.print_hr_employee_lunch_order</field>
+            <!-- <field name="attachment_use">True</field> -->
+            <!-- <field name="binding_model_id" ref="model_hr_employee"/> -->
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="print_hr_employee_lunch_order">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-4">Ажилтнууд:</div>
+                            <div class="col-8">
+                                <t t-out="employee_names" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">Тайлан татсан огноо:</div>
+                            <div class="col-8">
+                                <t t-out="report_date" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">Тайлант огноо:</div>
+                            <div class="col-8">
+                                <t t-out="start_date" />
+                                <span>-</span>
+                                <t t-out="end_date" />
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <!-- <template id="print_hr_employee_lunch_order">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="coremind_hr.print_hr_employee_lunch_order_template" />
+                </t>
+            </t>
+        </template>
+
+        <template id="print_hr_employee_lunch_order_template">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="row">
+                        <div class="col-4">Алба хэлтэс:</div>
+                        <div class="col-8">
+                            <t t-out="o.department_id.name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Ажилтан:</div>
+                        <div class="col-8">
+                            <t t-out="o.name"/>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Огноо</th>
+                            <th>Хоолны нэр</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="o.lunch_ids" t-as="lunch">
+                            <tr>
+                                <td>
+                                    <t t-out="lunch.date"/>
+                                </td>
+                                <td>
+                                    <t t-out="lunch.product_id.name"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </template> -->
+
+    </data>
+</odoo>
