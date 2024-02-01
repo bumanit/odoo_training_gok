@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_coremind_anket_hr_job_emc,coremind_anket.coremind_anket,model_hr_job_emc,base.group_user,1,1,1,1

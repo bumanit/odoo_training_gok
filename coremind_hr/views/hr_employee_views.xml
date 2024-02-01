@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <record id="view_employee_filter_inherit_coremind_hr" model="ir.ui.view">
+            <field name="name">view_employee_filter.inherit.coremind_hr</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="code" />
+                </xpath>
+            </field>
+        </record>
+
         <record id="view_employee_form_inherit_coremind_hr" model="ir.ui.view">
             <field name="name">view_employee_form.inherit.coremind_hr</field>
             <field name="model">hr.employee</field>
@@ -12,6 +23,10 @@
                     <field name="worked_months" />
                     <field name="organization_worked_months" />
                     <!-- <field name="child_ids" /> -->
+                    <!-- <field name="code" readonly="1" /> -->
+                </xpath>
+                <xpath expr="//field[@name='barcode']/parent::div" position="after">
+                    <field name="code" readonly="1" />
                 </xpath>
             </field>
         </record>
