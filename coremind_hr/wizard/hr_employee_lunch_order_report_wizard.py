@@ -5,6 +5,8 @@ from odoo.tools import (
     start_of,
 )
 
+# from odoo.tools.misc import profile
+
 date = "YYYY-MM-DD"
 datetime = "YYYY-MM-DD HH:mm:SS"
 

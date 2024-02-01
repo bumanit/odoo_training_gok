@@ -4,6 +4,7 @@ from dateutil.relativedelta import relativedelta
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 from odoo.osv import expression
+import time
 
 
 class HrEmployee(models.Model):
@@ -78,18 +79,20 @@ class HrEmployee(models.Model):
 
     @api.depends("organization_start_date")
     def _compute_organization_worked_months(self):
-        today = datetime.date.today()
+        with self.profile():
+            today = datetime.date.today()
+            time.sleep(5)
 
-        for rec in self:
-            month = 0
-            current_date = rec.organization_start_date
-            if current_date:
-                while current_date <= today:
-                    current_date += relativedelta(months=1)
-                    print(current_date)
-                    month += 1
+            for rec in self:
+                month = 0
+                current_date = rec.organization_start_date
+                if current_date:
+                    while current_date <= today:
+                        current_date += relativedelta(months=1)
+                        print(current_date)
+                        month += 1
 
-            rec.organization_worked_months = month
+                rec.organization_worked_months = month
 
 
 class HrEmployeeChild(models.Model):
