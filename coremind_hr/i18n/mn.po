@@ -1,0 +1,250 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* coremind_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-01 07:29+0000\n"
+"PO-Revision-Date: 2024-02-01 07:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.print_hr_employee_lunch_order
+msgid "<span>-</span>"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_report_wizard
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__code
+msgid "Code"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_wizard
+msgid "Create Order"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__create_uid
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__create_uid
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__create_date
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__create_date
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__date
+msgid "Date"
+msgstr ""
+
+#. module: coremind_hr
+#. odoo-python
+#: code:addons/coremind_hr/wizard/hr_employee_lunch_order_report_wizard.py:0
+#: model:ir.model.fields.selection,name:coremind_hr.selection__hr_employee_lunch_order_report_wizard__report_type__detail
+#, python-format
+msgid "Detail"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__display_name
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__display_name
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__employee_id
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__employee_ids
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__employee_ids
+#: model:ir.model.fields,field_description:coremind_hr.field_lunch_order__employee_id
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_report_wizard
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_wizard
+msgid "Employee"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_report_wizard
+msgid "Excel report"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model,name:coremind_hr.model_hr_employee_lunch_order_wizard
+msgid "HR Employee Lunch Order Wizard"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model,name:coremind_hr.model_hr_employee_child
+msgid "Hr Emp Child"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model,name:coremind_hr.model_hr_employee
+msgid "Hr Employee"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model,name:coremind_hr.model_hr_employee_lunch_order_report_wizard
+msgid "Hr Employee Lunch Order Report Wizard"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__id
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__id
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__write_uid
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__write_uid
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__write_date
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__write_date
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__lunch_ids
+msgid "Lunch"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model,name:coremind_hr.model_lunch_order
+#: model:ir.ui.menu,name:coremind_hr.lunch_order
+msgid "Lunch Order"
+msgstr "Өдрийн хоолны захиалга"
+
+#. module: coremind_hr
+#: model:ir.ui.menu,name:coremind_hr.lunch_order_report
+msgid "Lunch Order Report"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_child__name
+msgid "Name"
+msgstr ""
+
+#. module: coremind_hr
+#. odoo-python
+#: code:addons/coremind_hr/models/hr_employee.py:0
+#: model:ir.model.constraint,message:coremind_hr.constraint_hr_employee_code
+#, python-format
+msgid "Only one code in company"
+msgstr ""
+
+#. module: coremind_hr
+#. odoo-python
+#: code:addons/coremind_hr/models/hr_employee.py:0
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__organization_start_date
+#, python-format
+msgid "Organization Start Date"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__organization_worked_months
+msgid "Organization Worked Months"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.hr_employee_lunch_order_report_wizard
+msgid "PDF report"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.actions.report,name:coremind_hr.hr_employee_lunch_order_report
+msgid "Print Lunch Order"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__report_type
+msgid "Report Type"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: coremind_hr
+#. odoo-python
+#: code:addons/coremind_hr/wizard/hr_employee_lunch_order_report_wizard.py:0
+#: model:ir.model.fields.selection,name:coremind_hr.selection__hr_employee_lunch_order_report_wizard__report_type__summary
+#, python-format
+msgid "Summary"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee_lunch_order_report_wizard__supplier_id
+msgid "Supplier"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.model.fields,help:coremind_hr.field_hr_employee__worked_months
+msgid "This is our own customize code"
+msgstr ""
+
+#. module: coremind_hr
+#. odoo-python
+#: code:addons/coremind_hr/models/hr_employee.py:0
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__work_start_date
+#, python-format
+msgid "Work Start Date"
+msgstr "Тухайн байгууллагад ажилласан жил"
+
+#. module: coremind_hr
+#: model:ir.model.fields,field_description:coremind_hr.field_hr_employee__worked_months
+msgid "Worked Months"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.actions.act_window,name:coremind_hr.action_hr_employee_lunch_order_report_wizard
+msgid "action.hr.employee.lunch.order.report.wizard"
+msgstr ""
+
+#. module: coremind_hr
+#: model:ir.actions.act_window,name:coremind_hr.action_hr_employee_lunch_order_wizard
+msgid "action.hr.employee.lunch.order.wizard"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.print_hr_employee_lunch_order
+msgid "Ажилтнууд:"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.print_hr_employee_lunch_order
+msgid "Тайлан татсан огноо:"
+msgstr ""
+
+#. module: coremind_hr
+#: model_terms:ir.ui.view,arch_db:coremind_hr.print_hr_employee_lunch_order
+msgid "Тайлант огноо:"
+msgstr ""

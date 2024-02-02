@@ -13,7 +13,7 @@ class HrEmployee(models.Model):
 
     work_start_date = fields.Date(_("Work Start Date"))
     organization_start_date = fields.Date(_("Organization Start Date"))
-    worked_months = fields.Integer()
+    worked_months = fields.Integer(help="This is our own customize code")
     organization_worked_months = fields.Integer(
         compute="_compute_organization_worked_months", store=True
     )
